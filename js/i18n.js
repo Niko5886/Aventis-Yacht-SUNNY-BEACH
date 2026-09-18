@@ -13,7 +13,6 @@
       nav_home: 'Home', nav_yachts: 'Yachts', nav_destinations: 'Destinations',
       nav_experience: 'Experience', nav_about: 'About', nav_contact: 'Contact',
       nav_book: 'Book a Yacht',
-      hero_location: 'NEWPORT, NEW ENGLAND',
 
       /* about */
       about_eyebrow: 'OUR HERITAGE',
@@ -104,7 +103,6 @@
       nav_home: 'Начало', nav_yachts: 'Яхти', nav_destinations: 'Дестинации',
       nav_experience: 'Изживяване', nav_about: 'За нас', nav_contact: 'Контакти',
       nav_book: 'Резервирай яхта',
-      hero_location: 'НЮПОРТ, НОВА АНГЛИЯ',
 
       /* about */
       about_eyebrow: 'НАШЕТО НАСЛЕДСТВО',

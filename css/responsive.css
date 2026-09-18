@@ -8,7 +8,6 @@
   .container { max-width: 1120px; }
   #main-header, #main-header.scrolled { padding-left: 32px; padding-right: 32px; }
   .hero-content-stage { right: 56px; bottom: 96px; max-width: 540px; }
-  .hero-hud--left { left: 56px; }
   .hero-hud--right { right: 56px; }
   .destinations__grid { grid-template-columns: 340px 1fr; gap: 40px; }
   .split__content { padding: 90px 56px; }
@@ -30,7 +29,6 @@
   .hero-content-stage .eyebrow { justify-content: center; }
   .hero-desc { margin-left: auto; margin-right: auto; }
   .hero-buttons { justify-content: center; }
-  .hero-hud--left { left: 24px; bottom: 30px; }
   .hero-hud--right { right: 24px; bottom: 30px; }
   .hud-bar { width: 80px; }
 
@@ -102,7 +100,6 @@
   .hero-content-stage { left: 20px; right: 20px; bottom: 78px; }
   .hero-buttons { flex-direction: column; }
   .hero-buttons .btn { width: 100%; justify-content: center; }
-  .hero-hud--left { font-size: 10.5px; }
 
   .about__since { font-size: 30px; top: 24px; left: 24px; }
   .stats { grid-template-columns: 1fr; gap: 20px; }

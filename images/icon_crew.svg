@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#C59B5F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Crew">
-  <!-- primary crew member -->
-  <circle cx="13" cy="12.5" r="3.7"/>
-  <path d="M5.5 26 v-1 c0 -4 3.3 -6 7.5 -6 s7.5 2 7.5 6 v1"/>
-  <!-- second crew member behind -->
-  <circle cx="22.5" cy="11" r="2.9"/>
-  <path d="M21 15.6 c3.3 .1 5.9 2 5.9 5.4 V22"/>
-</svg>
