@@ -100,6 +100,8 @@
   .hero-content-stage { left: 20px; right: 20px; bottom: 78px; }
   .hero-buttons { flex-direction: column; }
   .hero-buttons .btn { width: 100%; justify-content: center; }
+  /* Hide the decorative scroll HUD on small phones so it never crowds the hero copy */
+  .hero-hud--right { display: none; }
 
   .about__since { font-size: 30px; top: 24px; left: 24px; }
   .stats { grid-template-columns: 1fr; gap: 20px; }

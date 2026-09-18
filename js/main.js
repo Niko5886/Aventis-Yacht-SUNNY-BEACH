@@ -195,9 +195,10 @@
     });
 
     /* ---------- Yacht details modal ---------- */
+    // The whole card is clickable (mouse); the .round-arrow button keeps the
+    // keyboard/screen-reader path — its click bubbles up so we bind once on the card.
     document.querySelectorAll('.yacht-card').forEach(function (card) {
-      var trigger = card.querySelector('.round-arrow');
-      function openYacht() {
+      card.addEventListener('click', function openYacht() {
         // Read from the card's DOM so the modal reflects the active language
         var img = card.querySelector('.yacht-card__media img');
         var name = card.querySelector('h3').textContent;
@@ -209,8 +210,7 @@
         document.getElementById('ym-specs').textContent = card.querySelector('.yacht-card__specs').textContent;
         document.getElementById('ym-rate').textContent = card.querySelector('.yacht-card__rate').textContent;
         openModal(yachtModal);
-      }
-      if (trigger) trigger.addEventListener('click', openYacht);
+      });
     });
 
   });
