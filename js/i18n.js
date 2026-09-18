@@ -48,7 +48,7 @@
       /* destinations */
       dest_eyebrow: 'TOP DESTINATIONS',
       dest_title: 'Iconic Places, Extraordinary Journeys',
-      dest_sub: "From Newport's historic coastline to hidden gems around the world, discover breathtaking destinations by sea.",
+      dest_sub: 'From the historic coastline of Sunny Beach to endlessly beautiful hidden places around the world, discover breathtaking destinations by sea.',
       dest_btn: 'Explore Destinations',
       dest1_sub: 'Rhode Island, USA', dest1_title: 'Newport',
       dest2_sub: 'Caribbean', dest2_title: 'The Bahamas',
@@ -139,7 +139,7 @@
       /* destinations */
       dest_eyebrow: 'ТОП ДЕСТИНАЦИИ',
       dest_title: 'Емблематични места, изключителни пътешествия',
-      dest_sub: 'От историческото крайбрежие на Нюпорт до скрити бижута по света — открийте зашеметяващи дестинации по вода.',
+      dest_sub: 'От историческото крайбрежие на Слънчев бряг до скрити безкрайно красиви места по света — открийте зашеметяващи дестинации по вода.',
       dest_btn: 'Разгледай дестинациите',
       dest1_sub: 'Роуд Айланд, САЩ', dest1_title: 'Нюпорт',
       dest2_sub: 'Карибите', dest2_title: 'Бахамите',
