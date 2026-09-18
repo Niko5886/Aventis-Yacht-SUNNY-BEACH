@@ -188,30 +188,5 @@
       if (trigger) trigger.addEventListener('click', openYacht);
     });
 
-    /* ---------- Custom cursor ---------- */
-    var fine = window.matchMedia('(pointer: fine)').matches;
-    if (fine) {
-      var dot = document.getElementById('cursor-dot');
-      var ring = document.getElementById('cursor-ring');
-      var mx = window.innerWidth / 2, my = window.innerHeight / 2;
-      var rx = mx, ry = my;
-      document.addEventListener('mousemove', function (e) {
-        mx = e.clientX; my = e.clientY;
-        dot.style.left = mx + 'px'; dot.style.top = my + 'px';
-        document.body.classList.add('cursor-ready');
-      });
-      function ringLoop() {
-        rx += (mx - rx) * 0.15; ry += (my - ry) * 0.15;
-        ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-        requestAnimationFrame(ringLoop);
-      }
-      requestAnimationFrame(ringLoop);
-      var hoverSel = 'a, button, .destination-card, .yacht-card, input, select, textarea, .tab, .search-chips button';
-      document.querySelectorAll(hoverSel).forEach(function (el) {
-        el.addEventListener('mouseenter', function () { ring.classList.add('is-hover'); });
-        el.addEventListener('mouseleave', function () { ring.classList.remove('is-hover'); });
-      });
-    }
-
   });
 })();

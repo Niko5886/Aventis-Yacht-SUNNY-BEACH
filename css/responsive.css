@@ -116,8 +116,3 @@
   .modal__close { top: 18px; right: 22px; }
   .yacht-modal__body { padding: 26px 24px 32px; }
 }
-
-/* ---------- Touch devices: hide custom cursor ---------- */
-@media (pointer: coarse) {
-  #cursor-dot, #cursor-ring { display: none; }
-}
