@@ -136,6 +136,7 @@ h3 { font-size: clamp(22px, 2vw, 26px); }
   display: flex; align-items: center; justify-content: space-between;
   padding: 22px 48px; transition: all 0.4s ease;
 }
+/* Transparent over the hero; dark bar returns once past the hero (content) */
 #main-header.scrolled {
   background: rgba(7, 15, 23, 0.88);
   backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);

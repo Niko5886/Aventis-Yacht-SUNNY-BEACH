@@ -24,8 +24,10 @@
 
     function onScrollHeader() {
       var y = window.scrollY;
-      if (y > 60) header.classList.add('scrolled');
-      else header.classList.remove('scrolled');
+      // Transparent while over the hero (the sea); the dark bar returns once the
+      // hero has scrolled past the header and content sections are in view.
+      var heroBottom = heroRunway ? heroRunway.getBoundingClientRect().bottom : 0;
+      header.classList.toggle('scrolled', heroBottom <= 40);
       if (toTop) toTop.classList.toggle('is-visible', y > btThreshold);
     }
     window.addEventListener('scroll', onScrollHeader, { passive: true });
