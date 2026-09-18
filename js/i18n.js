@@ -63,14 +63,14 @@
       testi1: "Sailing the Mediterranean with Aventis surpassed every expectation. The crew's discretion, the culinary artistry, and the vessel's immaculate finish made it an unforgettable journey.",
       testi1_role: 'Monaco Charter Client',
       testi2: 'From the first call to the final sunset, every detail was anticipated. Aventis turned a family holiday into the most cherished week of our year.',
-      testi2_role: 'Newport Charter Client',
+      testi2_role: 'Sunny Beach Charter Client',
       testi3: 'Impeccable taste and flawless execution. The private chef alone was worth the voyage — and the anchorages they found were pure magic.',
       testi3_role: 'Amalfi Charter Client',
 
       /* footer */
       footer_bio: 'Crafting extraordinary maritime journeys with bespoke itineraries and world-class hospitality since 1988.',
       footer_fleet: 'Fleet', footer_cat: 'Luxury Catamarans', footer_mega: 'Mega Yachts', footer_new: 'New Additions',
-      footer_dest1: 'Newport & New England', footer_dest3: 'French Riviera', footer_dest4: 'Amalfi Coast', footer_dest5: 'Greek Cyclades',
+      footer_dest1: 'Sunny Beach & Black Sea Coast', footer_dest3: 'French Riviera', footer_dest4: 'Amalfi Coast', footer_dest5: 'Greek Cyclades',
       footer_concierge: 'Charter Concierge', footer_news: 'Receive curated seasonal itineraries.', footer_email: 'Your email address',
       footer_copy: '© 2026 Aventis Yacht Charters. All rights reserved.',
       footer_privacy: 'Privacy Policy', footer_terms: 'Terms of Charter', footer_safety: 'Maritime Safety',
@@ -154,14 +154,14 @@
       testi1: 'Плаването из Средиземно море с Aventis надмина всяко очакване. Дискретността на екипажа, кулинарното майсторство и безупречната изработка на кораба го превърнаха в незабравимо пътешествие.',
       testi1_role: 'Чартър клиент, Монако',
       testi2: 'От първото обаждане до последния залез всеки детайл беше предвиден. Aventis превърна семейната ни почивка в най-скъпата седмица от годината.',
-      testi2_role: 'Чартър клиент, Нюпорт',
+      testi2_role: 'Чартър клиент, Слънчев бряг',
       testi3: 'Безупречен вкус и съвършено изпълнение. Само частният готвач си заслужаваше пътуването — а заливите, които откриха, бяха истинска магия.',
       testi3_role: 'Чартър клиент, Амалфи',
 
       /* footer */
       footer_bio: 'Създаваме изключителни морски пътешествия с индивидуални маршрути и гостоприемство на световно ниво от 1988 г.',
       footer_fleet: 'Флот', footer_cat: 'Луксозни катамарани', footer_mega: 'Мега яхти', footer_new: 'Нови попълнения',
-      footer_dest1: 'Нюпорт и Нова Англия', footer_dest3: 'Френската ривиера', footer_dest4: 'Амалфийското крайбрежие', footer_dest5: 'Гръцките Циклади',
+      footer_dest1: 'Слънчев бряг и Черноморие', footer_dest3: 'Френската ривиера', footer_dest4: 'Амалфийското крайбрежие', footer_dest5: 'Гръцките Циклади',
       footer_concierge: 'Чартър консиерж', footer_news: 'Получавайте подбрани сезонни маршрути.', footer_email: 'Вашият имейл адрес',
       footer_copy: '© 2026 Aventis Yacht Charters. Всички права запазени.',
       footer_privacy: 'Поверителност', footer_terms: 'Условия за чартър', footer_safety: 'Морска безопасност',
