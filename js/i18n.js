@@ -50,7 +50,7 @@
       dest_title: 'Iconic Places, Extraordinary Journeys',
       dest_sub: 'From the historic coastline of Sunny Beach to endlessly beautiful hidden places around the world, discover breathtaking destinations by sea.',
       dest_btn: 'Explore Destinations',
-      dest1_sub: 'Rhode Island, USA', dest1_title: 'Newport',
+      dest1_sub: 'Black Sea Coast, Bulgaria', dest1_title: 'Sunny Beach',
       dest2_sub: 'Caribbean', dest2_title: 'The Bahamas',
       dest3_sub: 'Europe', dest3_title: 'Mediterranean',
 
@@ -141,7 +141,7 @@
       dest_title: 'Емблематични места, изключителни пътешествия',
       dest_sub: 'От историческото крайбрежие на Слънчев бряг до скрити безкрайно красиви места по света — открийте зашеметяващи дестинации по вода.',
       dest_btn: 'Разгледай дестинациите',
-      dest1_sub: 'Роуд Айланд, САЩ', dest1_title: 'Нюпорт',
+      dest1_sub: 'Черноморие, България', dest1_title: 'Слънчев бряг',
       dest2_sub: 'Карибите', dest2_title: 'Бахамите',
       dest3_sub: 'Европа', dest3_title: 'Средиземноморие',
 
