@@ -1,0 +1,217 @@
+/* =====================================================================
+   AVENTIS — main.js
+   Header, reveal, stat counters, fleet tabs, Swiper carousels,
+   custom cursor, and modals (search / booking / yacht details).
+   ===================================================================== */
+(function () {
+  'use strict';
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  document.addEventListener('DOMContentLoaded', function () {
+
+    /* ---------- Header scrolled state ---------- */
+    var header = document.getElementById('main-header');
+    function onScrollHeader() {
+      if (window.scrollY > 60) header.classList.add('scrolled');
+      else header.classList.remove('scrolled');
+    }
+    window.addEventListener('scroll', onScrollHeader, { passive: true });
+    onScrollHeader();
+
+    /* ---------- Mobile drawer ---------- */
+    var navToggle = document.getElementById('nav-toggle');
+    var drawer = document.getElementById('mobile-drawer');
+    function closeDrawer() {
+      drawer.classList.remove('is-open');
+      navToggle.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      drawer.setAttribute('aria-hidden', 'true');
+    }
+    if (navToggle && drawer) {
+      navToggle.addEventListener('click', function () {
+        var open = drawer.classList.toggle('is-open');
+        navToggle.classList.toggle('is-open', open);
+        navToggle.setAttribute('aria-expanded', String(open));
+        drawer.setAttribute('aria-hidden', String(!open));
+      });
+      drawer.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', closeDrawer); });
+    }
+
+    /* ---------- Reveal on scroll ---------- */
+    var reveals = document.querySelectorAll('[data-reveal]');
+    if ('IntersectionObserver' in window && !reduced) {
+      var revObs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-in'); revObs.unobserve(e.target); }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
+      reveals.forEach(function (el) { revObs.observe(el); });
+    } else {
+      reveals.forEach(function (el) { el.classList.add('is-in'); });
+    }
+
+    /* ---------- Animated stat counters ---------- */
+    var statsGrid = document.querySelector('.stats');
+    function runCounters() {
+      document.querySelectorAll('.stat-number').forEach(function (node) {
+        var target = parseInt(node.getAttribute('data-target'), 10) || 0;
+        var duration = 1800, start = null;
+        function step(ts) {
+          if (!start) start = ts;
+          var prog = Math.min((ts - start) / duration, 1);
+          var eased = 1 - Math.pow(1 - prog, 3); // easeOutCubic
+          node.textContent = Math.round(eased * target);
+          if (prog < 1) requestAnimationFrame(step);
+        }
+        requestAnimationFrame(step);
+      });
+    }
+    if (statsGrid) {
+      if ('IntersectionObserver' in window && !reduced) {
+        var statObs = new IntersectionObserver(function (entries) {
+          entries.forEach(function (e) { if (e.isIntersecting) { runCounters(); statObs.disconnect(); } });
+        }, { threshold: 0.4 });
+        statObs.observe(statsGrid);
+      } else { runCounters(); }
+    }
+
+    /* ---------- Fleet tabs filter ---------- */
+    var tabs = document.querySelectorAll('.fleet__tabs .tab');
+    var cards = document.querySelectorAll('.yacht-card');
+    tabs.forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        tabs.forEach(function (t) { t.classList.remove('is-active'); });
+        tab.classList.add('is-active');
+        var f = tab.getAttribute('data-filter');
+        cards.forEach(function (card) {
+          var show = f === 'all' || card.getAttribute('data-cat') === f;
+          card.classList.toggle('is-hidden', !show);
+        });
+      });
+    });
+
+    /* ---------- Swiper: destinations ---------- */
+    if (window.Swiper) {
+      new Swiper('#destinations-slider', {
+        slidesPerView: 1.08,
+        spaceBetween: 16,
+        speed: 800,
+        grabCursor: true,
+        navigation: { nextEl: '.dest-next-btn', prevEl: '.dest-prev-btn' },
+        breakpoints: {
+          481: { slidesPerView: 1.25, spaceBetween: 20 },
+          769: { slidesPerView: 1.8, spaceBetween: 24 },
+          993: { slidesPerView: 2.2, spaceBetween: 24 },
+          1280: { slidesPerView: 2.8, spaceBetween: 32 }
+        }
+      });
+
+      /* ---------- Swiper: testimonials ---------- */
+      new Swiper('#testimonials-slider', {
+        slidesPerView: 1,
+        speed: 700,
+        loop: true,
+        autoplay: reduced ? false : { delay: 6000, disableOnInteraction: false },
+        pagination: { el: '.test-pagination', clickable: true, bulletClass: 'swiper-pagination-bullet', bulletActiveClass: 'swiper-pagination-bullet-active' }
+      });
+    }
+
+    /* ---------- Modals ---------- */
+    var lastFocused = null;
+    function openModal(modal) {
+      if (!modal) return;
+      lastFocused = document.activeElement;
+      modal.classList.add('is-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      var focusable = modal.querySelector('input, button, select, textarea, a[href]');
+      if (focusable) setTimeout(function () { focusable.focus(); }, 60);
+    }
+    function closeModal(modal) {
+      if (!modal) return;
+      modal.classList.remove('is-open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastFocused) lastFocused.focus();
+    }
+    function closeAllModals() {
+      document.querySelectorAll('.modal.is-open').forEach(closeModal);
+    }
+
+    var searchModal = document.getElementById('search-modal');
+    var bookingModal = document.getElementById('booking-modal');
+    var yachtModal = document.getElementById('yacht-modal');
+
+    var searchOpen = document.getElementById('search-open');
+    if (searchOpen) searchOpen.addEventListener('click', function () { openModal(searchModal); });
+
+    document.querySelectorAll('[data-open-booking]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeAllModals(); openModal(bookingModal); });
+    });
+
+    document.querySelectorAll('[data-close-modal]').forEach(function (btn) {
+      btn.addEventListener('click', function () { closeModal(btn.closest('.modal')); });
+    });
+
+    // click on backdrop closes
+    document.querySelectorAll('.modal').forEach(function (modal) {
+      modal.addEventListener('mousedown', function (e) { if (e.target === modal) closeModal(modal); });
+    });
+
+    // Escape + focus trap
+    document.addEventListener('keydown', function (e) {
+      var open = document.querySelector('.modal.is-open');
+      if (!open) return;
+      if (e.key === 'Escape') { closeModal(open); return; }
+      if (e.key === 'Tab') {
+        var f = open.querySelectorAll('input, button, select, textarea, a[href], [tabindex]:not([tabindex="-1"])');
+        if (!f.length) return;
+        var first = f[0], last = f[f.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    });
+
+    /* ---------- Yacht details modal ---------- */
+    document.querySelectorAll('.yacht-card').forEach(function (card) {
+      var trigger = card.querySelector('.round-arrow');
+      function openYacht() {
+        document.getElementById('ym-img').src = card.getAttribute('data-img');
+        document.getElementById('ym-img').alt = card.getAttribute('data-name');
+        document.getElementById('ym-tag').textContent = (card.getAttribute('data-tag') || '').toUpperCase();
+        document.getElementById('ym-name').textContent = card.getAttribute('data-name');
+        document.getElementById('ym-specs').textContent = card.getAttribute('data-specs');
+        document.getElementById('ym-rate').textContent = card.getAttribute('data-rate');
+        openModal(yachtModal);
+      }
+      if (trigger) trigger.addEventListener('click', openYacht);
+    });
+
+    /* ---------- Custom cursor ---------- */
+    var fine = window.matchMedia('(pointer: fine)').matches;
+    if (fine) {
+      var dot = document.getElementById('cursor-dot');
+      var ring = document.getElementById('cursor-ring');
+      var mx = window.innerWidth / 2, my = window.innerHeight / 2;
+      var rx = mx, ry = my;
+      document.addEventListener('mousemove', function (e) {
+        mx = e.clientX; my = e.clientY;
+        dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+        document.body.classList.add('cursor-ready');
+      });
+      function ringLoop() {
+        rx += (mx - rx) * 0.15; ry += (my - ry) * 0.15;
+        ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+        requestAnimationFrame(ringLoop);
+      }
+      requestAnimationFrame(ringLoop);
+      var hoverSel = 'a, button, .destination-card, .yacht-card, input, select, textarea, .tab, .search-chips button';
+      document.querySelectorAll(hoverSel).forEach(function (el) {
+        el.addEventListener('mouseenter', function () { ring.classList.add('is-hover'); });
+        el.addEventListener('mouseleave', function () { ring.classList.remove('is-hover'); });
+      });
+    }
+
+  });
+})();
