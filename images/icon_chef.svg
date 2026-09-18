@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#C59B5F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Michelin-trained chefs">
+  <path d="M5 21 a11 11 0 0 1 22 0"/>
+  <line x1="3" y1="21" x2="29" y2="21"/>
+  <line x1="16" y1="10" x2="16" y2="6.6"/>
+  <circle cx="16" cy="5" r="1.5" fill="#C59B5F" stroke="none"/>
+</svg>

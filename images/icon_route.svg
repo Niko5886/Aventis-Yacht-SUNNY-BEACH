@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="#C59B5F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Bespoke itineraries">
+  <path d="M4 8 L12 5 L20 8 L28 5 V24 L20 27 L12 24 L4 27 Z"/>
+  <line x1="12" y1="5" x2="12" y2="24"/>
+  <line x1="20" y1="8" x2="20" y2="27"/>
+</svg>
