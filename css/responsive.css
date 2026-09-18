@@ -1,0 +1,123 @@
+/* =====================================================================
+   AVENTIS — responsive.css
+   Breakpoints: 1280 / 1279–993 / 992–769 / 768–481 / 480
+   ===================================================================== */
+
+/* ---------- Laptop / small desktop (<= 1279px) ---------- */
+@media (max-width: 1279px) {
+  .container { max-width: 1120px; }
+  #main-header, #main-header.scrolled { padding-left: 32px; padding-right: 32px; }
+  .hero-content-stage { right: 56px; bottom: 96px; max-width: 540px; }
+  .hero-hud--left { left: 56px; }
+  .hero-hud--right { right: 56px; }
+  .destinations__grid { grid-template-columns: 340px 1fr; gap: 40px; }
+  .split__content { padding: 90px 56px; }
+}
+
+/* ---------- Tablet (<= 992px) ---------- */
+@media (max-width: 992px) {
+  .section { padding: 90px 0 80px; }
+
+  /* Header → hamburger drawer */
+  #main-header, #main-header.scrolled { padding: 16px 28px; }
+  .nav { display: none; }
+  .hamburger { display: flex; }
+
+  /* Hero centered */
+  .hero-content-stage {
+    left: 40px; right: 40px; bottom: 90px; max-width: 100%; text-align: center;
+  }
+  .hero-content-stage .eyebrow { justify-content: center; }
+  .hero-desc { margin-left: auto; margin-right: auto; }
+  .hero-buttons { justify-content: center; }
+  .hero-hud--left { left: 24px; bottom: 30px; }
+  .hero-hud--right { right: 24px; bottom: 30px; }
+  .hud-bar { width: 80px; }
+
+  /* About stacked */
+  .about__grid { grid-template-columns: 1fr; gap: 50px; }
+  .about__visual { max-width: 620px; }
+
+  /* Fleet 2-up */
+  .fleet__grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Split stacked */
+  .split { grid-template-columns: 1fr; }
+  .split__visual { min-height: 480px; }
+  .split__content { padding: 70px 40px; }
+
+  /* Destinations stacked */
+  .destinations__grid { grid-template-columns: 1fr; gap: 40px; }
+  .dest-nav { margin-top: 24px; }
+
+  /* CTA */
+  .cta-banner { background-attachment: scroll; }
+
+  /* Footer 2-col */
+  .footer__grid { grid-template-columns: repeat(2, 1fr); gap: 44px; }
+  .footer { padding: 80px 0 40px; }
+}
+
+/* ---------- Large phone / landscape (<= 768px) ---------- */
+@media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  #main-header, #main-header.scrolled { padding: 14px 20px; gap: 12px; }
+  .header-actions .btn-gold { display: none; } /* available in the drawer */
+  .header-actions { gap: 10px; }
+  .brand { min-width: 0; }
+  .brand__wordmark b { font-size: 18px; letter-spacing: 2px; }
+  .brand__wordmark em { font-size: 7.5px; letter-spacing: 3px; }
+  .brand__mark { width: 38px; height: 38px; }
+
+  /* Faster hero scrub on mobile */
+  .hero-runway { height: 220vh; }
+  .hero-content-stage { bottom: 80px; }
+  .hero-content-stage h1 { font-size: clamp(34px, 8vw, 44px); }
+  .hero-desc { font-size: 15px; }
+
+  .fleet__grid { grid-template-columns: 1fr; }
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 24px; }
+
+  .cta-banner__inner { justify-content: center; }
+  .cta-banner__content { text-align: center; }
+
+  .press__row { justify-content: center; gap: 22px 30px; }
+  .press__row span { font-size: 16px; }
+
+  .booking-form { grid-template-columns: 1fr; }
+
+  .footer__bottom { flex-direction: column; gap: 16px; text-align: center; }
+  .footer__legal { justify-content: center; }
+}
+
+/* ---------- Small phone (<= 480px) ---------- */
+@media (max-width: 480px) {
+  .section { padding: 72px 0 64px; }
+
+  /* Keep only the emblem + AVENTIS to avoid header crowding */
+  .brand__wordmark em { display: none; }
+  .brand__wordmark b { font-size: 17px; }
+
+  .hero-content-stage { left: 20px; right: 20px; bottom: 78px; }
+  .hero-buttons { flex-direction: column; }
+  .hero-buttons .btn { width: 100%; justify-content: center; }
+  .hero-hud--left { font-size: 10.5px; }
+
+  .about__since { font-size: 30px; top: 24px; left: 24px; }
+  .stats { grid-template-columns: 1fr; gap: 20px; }
+  .stat { flex-direction: row; align-items: baseline; gap: 8px; }
+  .stat p { margin-top: 0; }
+
+  .split__content { padding: 54px 24px; }
+
+  .footer__grid { grid-template-columns: 1fr; gap: 36px; }
+
+  .dialog { padding: 34px 22px; }
+  .modal__close { top: 18px; right: 22px; }
+  .yacht-modal__body { padding: 26px 24px 32px; }
+}
+
+/* ---------- Touch devices: hide custom cursor ---------- */
+@media (pointer: coarse) {
+  #cursor-dot, #cursor-ring { display: none; }
+}
