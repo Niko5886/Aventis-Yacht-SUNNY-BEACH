@@ -509,6 +509,26 @@ h3 { font-size: clamp(22px, 2vw, 26px); }
 .yacht-modal__body #ym-rate { display: block; margin: 20px 0 24px; }
 
 /* =====================================================================
+   BACK TO TOP
+   ===================================================================== */
+.back-to-top {
+  position: fixed; bottom: 32px; right: 32px; z-index: 900;
+  width: 52px; height: 52px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: #fff; background: var(--color-gold);
+  border: 1px solid var(--color-gold-light);
+  box-shadow: var(--shadow-gold);
+  opacity: 0; visibility: hidden; transform: translateY(16px);
+  transition: opacity 0.4s cubic-bezier(0.16,1,0.3,1),
+              transform 0.4s cubic-bezier(0.16,1,0.3,1),
+              background 0.3s ease, box-shadow 0.3s ease;
+}
+.back-to-top.is-visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--color-gold-dark); box-shadow: 0 14px 34px rgba(197,155,95,0.45); transform: translateY(-3px); }
+.back-to-top svg { transition: transform 0.3s ease; }
+.back-to-top:hover svg { transform: translateY(-2px); }
+
+/* =====================================================================
    REDUCED MOTION
    ===================================================================== */
 @media (prefers-reduced-motion: reduce) {

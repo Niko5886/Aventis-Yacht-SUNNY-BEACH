@@ -116,4 +116,6 @@
   .dialog { padding: 34px 22px; }
   .modal__close { top: 18px; right: 22px; }
   .yacht-modal__body { padding: 26px 24px 32px; }
+
+  .back-to-top { bottom: 20px; right: 20px; width: 46px; height: 46px; }
 }

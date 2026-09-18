@@ -10,14 +10,33 @@
 
   document.addEventListener('DOMContentLoaded', function () {
 
-    /* ---------- Header scrolled state ---------- */
+    /* ---------- Header scrolled state + back-to-top ---------- */
     var header = document.getElementById('main-header');
+    var toTop = document.getElementById('back-to-top');
+    var heroRunway = document.getElementById('home');
+    var btThreshold = 500;
+    function computeThreshold() {
+      // Reveal only once the hero runway is cleared, keeping the hero HUD uncluttered
+      btThreshold = heroRunway ? Math.max(500, heroRunway.offsetHeight - window.innerHeight) : 500;
+    }
+    computeThreshold();
+    window.addEventListener('resize', computeThreshold, { passive: true });
+
     function onScrollHeader() {
-      if (window.scrollY > 60) header.classList.add('scrolled');
+      var y = window.scrollY;
+      if (y > 60) header.classList.add('scrolled');
       else header.classList.remove('scrolled');
+      if (toTop) toTop.classList.toggle('is-visible', y > btThreshold);
     }
     window.addEventListener('scroll', onScrollHeader, { passive: true });
     onScrollHeader();
+
+    if (toTop) {
+      toTop.addEventListener('click', function () {
+        var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      });
+    }
 
     /* ---------- Mobile drawer ---------- */
     var navToggle = document.getElementById('nav-toggle');
