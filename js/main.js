@@ -168,7 +168,21 @@
     if (searchOpen) searchOpen.addEventListener('click', function () { openModal(searchModal); });
 
     document.querySelectorAll('[data-open-booking]').forEach(function (btn) {
-      btn.addEventListener('click', function () { closeAllModals(); openModal(bookingModal); });
+      btn.addEventListener('click', function () {
+        closeAllModals();
+        var n = bookingModal.querySelector('.form-note'); if (n) n.hidden = true; // fresh form on each open
+        openModal(bookingModal);
+      });
+    });
+
+    /* ---------- Form submit feedback ---------- */
+    document.querySelectorAll('form.newsletter, form.booking-form').forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var note = form.parentNode.querySelector('.form-note');
+        if (note) note.hidden = false;
+        form.reset();
+      });
     });
 
     document.querySelectorAll('[data-close-modal]').forEach(function (btn) {
@@ -186,7 +200,10 @@
       if (!open) return;
       if (e.key === 'Escape') { closeModal(open); return; }
       if (e.key === 'Tab') {
-        var f = open.querySelectorAll('input, button, select, textarea, a[href], [tabindex]:not([tabindex="-1"])');
+        var f = Array.prototype.filter.call(
+          open.querySelectorAll('input, button, select, textarea, a[href], [tabindex]:not([tabindex="-1"])'),
+          function (el) { return !el.disabled && el.offsetParent !== null; } // skip disabled & hidden
+        );
         if (!f.length) return;
         var first = f[0], last = f[f.length - 1];
         if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
@@ -204,7 +221,7 @@
         var name = card.querySelector('h3').textContent;
         var ymImg = document.getElementById('ym-img');
         ymImg.src = img ? img.getAttribute('src') : card.getAttribute('data-img');
-        ymImg.alt = name;
+        ymImg.alt = img && img.getAttribute('alt') ? img.getAttribute('alt') : name;
         document.getElementById('ym-tag').textContent = card.querySelector('.yacht-card__tag').textContent;
         document.getElementById('ym-name').textContent = name;
         document.getElementById('ym-specs').textContent = card.querySelector('.yacht-card__specs').textContent;

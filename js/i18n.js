@@ -71,6 +71,7 @@
       footer_fleet: 'Fleet', footer_cat: 'Luxury Catamarans', footer_mega: 'Mega Yachts', footer_new: 'New Additions',
       footer_dest1: 'Sunny Beach & Black Sea Coast', footer_dest3: 'French Riviera', footer_dest4: 'Amalfi Coast', footer_dest5: 'Greek Cyclades',
       footer_concierge: 'Charter Concierge', footer_news: 'Receive curated seasonal itineraries.', footer_email: 'Your email address',
+      footer_thanks: 'Thank you — curated itineraries are on their way.',
       footer_copy: '© 2026 Aventis Yacht Charters. All rights reserved.',
       footer_privacy: 'Privacy Policy', footer_terms: 'Terms of Charter', footer_safety: 'Maritime Safety',
 
@@ -86,6 +87,7 @@
       book_guests: 'Number of Guests',
       book_requests: 'Special Requests', book_requests_ph: 'Tell us about your ideal voyage…',
       book_send: 'Send Enquiry',
+      book_thanks: 'Thank you — a charter broker will contact you within 24 hours.',
 
       /* yacht modal */
       ym_desc: 'A flagship of the Aventis private fleet — appointed with sumptuous staterooms, expansive sun decks and a full suite of water toys, supported by a discreet professional crew.',
@@ -161,6 +163,7 @@
       footer_fleet: 'Флот', footer_cat: 'Луксозни катамарани', footer_mega: 'Мега яхти', footer_new: 'Нови попълнения',
       footer_dest1: 'Слънчев бряг и Черноморие', footer_dest3: 'Френската ривиера', footer_dest4: 'Амалфийското крайбрежие', footer_dest5: 'Гръцките Циклади',
       footer_concierge: 'Чартър консиерж', footer_news: 'Получавайте подбрани сезонни маршрути.', footer_email: 'Вашият имейл адрес',
+      footer_thanks: 'Благодарим — подбрани маршрути са на път към вас.',
       footer_copy: '© 2026 Aventis Yacht Charters. Всички права запазени.',
       footer_privacy: 'Поверителност', footer_terms: 'Условия за чартър', footer_safety: 'Морска безопасност',
 
@@ -176,6 +179,7 @@
       book_guests: 'Брой гости',
       book_requests: 'Специални изисквания', book_requests_ph: 'Разкажете ни за идеалното си пътуване…',
       book_send: 'Изпрати запитване',
+      book_thanks: 'Благодарим — чартър брокер ще се свърже с вас до 24 часа.',
 
       /* yacht modal */
       ym_desc: 'Флагман на частния флот на Aventis — с разкошни каюти, просторни слънчеви палуби и пълен набор водни играчки, обслужван от дискретен професионален екипаж.',

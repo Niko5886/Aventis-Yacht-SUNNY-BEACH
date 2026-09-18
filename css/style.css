@@ -447,6 +447,8 @@ h3 { font-size: clamp(22px, 2vw, 26px); }
 .newsletter input::placeholder { color: rgba(255,255,255,0.45); }
 .newsletter button { width: 40px; height: 40px; border-radius: 50%; background: var(--color-gold); color: #fff; display: inline-flex; align-items: center; justify-content: center; transition: var(--transition-smooth); flex-shrink: 0; }
 .newsletter button:hover { background: var(--color-gold-dark); }
+.form-note { margin-top: 14px; font-size: 13.5px; line-height: 1.5; color: var(--color-gold-light); }
+.form-note[hidden] { display: none; }
 .footer__contact { margin-top: 26px; }
 .footer__contact li { color: var(--color-text-dim); font-size: 14px; margin-bottom: 10px; }
 
