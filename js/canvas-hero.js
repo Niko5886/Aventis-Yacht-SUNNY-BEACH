@@ -101,36 +101,11 @@
     return Math.max(0, Math.min(1, p));
   }
 
-  /* ---- Hero content stages ---- */
-  var STAGES = [
-    {
-      eyebrow: 'BESPOKE PRIVATE CHARTERS',
-      title: 'Extraordinary Journeys',
-      desc: 'Curated maritime voyages handcrafted for those who demand the finest in luxury yachting.',
-      btn1: 'Explore The Fleet', btn2: 'Watch Story'
-    },
-    {
-      eyebrow: 'OCEANIC EXCELLENCE',
-      title: 'Unrivaled Freedom',
-      desc: 'Chart your own horizon across pristine archipelagos with Michelin-trained private crews.',
-      btn1: 'View Destinations', btn2: 'Inquire Now'
-    },
-    {
-      eyebrow: 'THE PINNACLE OF LUXURY',
-      title: 'Endless Horizons',
-      desc: 'Immerse yourself in timeless coastal elegance where world-class service meets absolute serenity.',
-      btn1: 'Begin Journey', btn2: 'Charter Guide'
-    }
-  ];
-
+  /* ---- Hero HUD + stage dispatch ----
+     Text content for each stage is owned by i18n.js (BG/EN). Here we only
+     drive the HUD (active number + progress bar) and announce stage changes
+     via the 'aventis:herostage' event so i18n.js can render the copy. */
   var stageEl = document.querySelector('.hero-content-stage');
-  var el = {
-    eyebrow: document.querySelector('[data-hero="eyebrow"]'),
-    title: document.querySelector('[data-hero="title"]'),
-    desc: document.querySelector('[data-hero="desc"]'),
-    btn1: document.querySelector('[data-hero="btn1"]'),
-    btn2: document.querySelector('[data-hero="btn2"]')
-  };
   var hudNums = Array.prototype.slice.call(document.querySelectorAll('.hud-num'));
   var hudFill = document.getElementById('hud-fill');
   var activeStage = -1;
@@ -138,17 +113,12 @@
   function setStage(s) {
     if (s === activeStage) return;
     activeStage = s;
-    var data = STAGES[s];
     if (stageEl) {
       stageEl.classList.add('is-swapping');
       setTimeout(function () { stageEl.classList.remove('is-swapping'); }, 60);
     }
-    if (el.eyebrow) el.eyebrow.textContent = data.eyebrow;
-    if (el.title) el.title.textContent = data.title;
-    if (el.desc) el.desc.textContent = data.desc;
-    if (el.btn1) el.btn1.innerHTML = data.btn1 + ' <span class="arr">&rarr;</span>';
-    if (el.btn2) el.btn2.textContent = data.btn2;
     hudNums.forEach(function (n, i) { n.classList.toggle('is-active', i === s); });
+    document.dispatchEvent(new CustomEvent('aventis:herostage', { detail: { stage: s } }));
   }
 
   function updateContent(p) {

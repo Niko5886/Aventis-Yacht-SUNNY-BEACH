@@ -177,12 +177,16 @@
     document.querySelectorAll('.yacht-card').forEach(function (card) {
       var trigger = card.querySelector('.round-arrow');
       function openYacht() {
-        document.getElementById('ym-img').src = card.getAttribute('data-img');
-        document.getElementById('ym-img').alt = card.getAttribute('data-name');
-        document.getElementById('ym-tag').textContent = (card.getAttribute('data-tag') || '').toUpperCase();
-        document.getElementById('ym-name').textContent = card.getAttribute('data-name');
-        document.getElementById('ym-specs').textContent = card.getAttribute('data-specs');
-        document.getElementById('ym-rate').textContent = card.getAttribute('data-rate');
+        // Read from the card's DOM so the modal reflects the active language
+        var img = card.querySelector('.yacht-card__media img');
+        var name = card.querySelector('h3').textContent;
+        var ymImg = document.getElementById('ym-img');
+        ymImg.src = img ? img.getAttribute('src') : card.getAttribute('data-img');
+        ymImg.alt = name;
+        document.getElementById('ym-tag').textContent = card.querySelector('.yacht-card__tag').textContent;
+        document.getElementById('ym-name').textContent = name;
+        document.getElementById('ym-specs').textContent = card.querySelector('.yacht-card__specs').textContent;
+        document.getElementById('ym-rate').textContent = card.querySelector('.yacht-card__rate').textContent;
         openModal(yachtModal);
       }
       if (trigger) trigger.addEventListener('click', openYacht);

@@ -72,19 +72,23 @@
     </a>
 
     <nav class="nav" aria-label="Primary">
-      <a href="#home">Home</a>
-      <a href="#fleet">Yachts</a>
-      <a href="#destinations">Destinations</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" data-i18n="nav_home">Home</a>
+      <a href="#fleet" data-i18n="nav_yachts">Yachts</a>
+      <a href="#destinations" data-i18n="nav_destinations">Destinations</a>
+      <a href="#experience" data-i18n="nav_experience">Experience</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
     </nav>
 
     <div class="header-actions">
       <button class="icon-btn" id="search-open" aria-label="Search charters">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
       </button>
-      <button class="btn btn-gold" data-open-booking>Book a Yacht <span class="arr">&rarr;</span></button>
+      <button class="btn btn-gold" data-open-booking><span data-i18n="nav_book">Book a Yacht</span> <span class="arr">&rarr;</span></button>
+      <div class="lang-switch" role="group" aria-label="Language / Език">
+        <button class="lang-opt is-active" data-lang="bg" aria-pressed="true">BG</button>
+        <button class="lang-opt" data-lang="en" aria-pressed="false">EN</button>
+      </div>
       <button class="hamburger" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -94,13 +98,13 @@
   <!-- ============ MOBILE DRAWER ============ -->
   <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
     <nav aria-label="Mobile">
-      <a href="#home">Home</a>
-      <a href="#fleet">Yachts</a>
-      <a href="#destinations">Destinations</a>
-      <a href="#experience">Experience</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <button class="btn btn-gold" data-open-booking>Book a Yacht <span class="arr">&rarr;</span></button>
+      <a href="#home" data-i18n="nav_home">Home</a>
+      <a href="#fleet" data-i18n="nav_yachts">Yachts</a>
+      <a href="#destinations" data-i18n="nav_destinations">Destinations</a>
+      <a href="#experience" data-i18n="nav_experience">Experience</a>
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+      <button class="btn btn-gold" data-open-booking><span data-i18n="nav_book">Book a Yacht</span> <span class="arr">&rarr;</span></button>
     </nav>
   </div>
 
@@ -116,13 +120,13 @@
           <h1 data-hero="title">Extraordinary Journeys</h1>
           <p class="hero-desc" data-hero="desc">Curated maritime voyages handcrafted for those who demand the finest in luxury yachting.</p>
           <div class="hero-buttons">
-            <button class="btn btn-gold" data-hero="btn1">Explore The Fleet <span class="arr">&rarr;</span></button>
+            <button class="btn btn-gold" data-hero="btn1" data-open-booking>Explore The Fleet <span class="arr">&rarr;</span></button>
             <button class="btn btn-ghost" data-hero="btn2">Watch Story</button>
           </div>
         </div>
 
         <div class="hero-hud hero-hud--left">
-          <span class="hud-dot"></span> NEWPORT, NEW ENGLAND
+          <span class="hud-dot"></span> <span data-i18n="hero_location">NEWPORT, NEW ENGLAND</span>
         </div>
         <div class="hero-hud hero-hud--right">
           <span class="hud-num" data-stage="0">01</span>
@@ -141,16 +145,16 @@
           <span class="about__since">Since 1988</span>
         </div>
         <div class="about__content" data-reveal>
-          <p class="eyebrow"><span class="eyebrow-line"></span>OUR HERITAGE</p>
-          <h2>A Legacy of Pure Maritime Luxury</h2>
-          <p class="lead">For more than three decades, Aventis has set the gold standard in private yacht charters. Combining discreet five-star hospitality with the world's most prestigious maritime fleet, we craft voyages that live long in memory.</p>
-          <p class="muted">Every itinerary is composed by hand — from secluded anchorages and Michelin-trained galleys to certified master crews who anticipate your every desire.</p>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="about_eyebrow">OUR HERITAGE</span></p>
+          <h2 data-i18n="about_title">A Legacy of Pure Maritime Luxury</h2>
+          <p class="lead" data-i18n="about_lead">For more than three decades, Aventis has set the gold standard in private yacht charters. Combining discreet five-star hospitality with the world's most prestigious maritime fleet, we craft voyages that live long in memory.</p>
+          <p class="muted" data-i18n="about_body">Every itinerary is composed by hand — from secluded anchorages and Michelin-trained galleys to certified master crews who anticipate your every desire.</p>
 
           <div class="stats">
-            <div class="stat"><span class="stat-number" data-target="120">0</span><span class="stat-plus">+</span><p>Fleet Vessels</p></div>
-            <div class="stat"><span class="stat-number" data-target="35">0</span><span class="stat-plus">+</span><p>Global Destinations</p></div>
-            <div class="stat"><span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span><p>Client Satisfaction</p></div>
-            <div class="stat"><span class="stat-number" data-target="25">0</span><p>Years of Excellence</p></div>
+            <div class="stat"><span class="stat-number" data-target="120">0</span><span class="stat-plus">+</span><p data-i18n="stat_vessels">Fleet Vessels</p></div>
+            <div class="stat"><span class="stat-number" data-target="35">0</span><span class="stat-plus">+</span><p data-i18n="stat_destinations">Global Destinations</p></div>
+            <div class="stat"><span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span><p data-i18n="stat_satisfaction">Client Satisfaction</p></div>
+            <div class="stat"><span class="stat-number" data-target="25">0</span><p data-i18n="stat_years">Years of Excellence</p></div>
           </div>
         </div>
       </div>
@@ -160,33 +164,30 @@
     <section id="fleet" class="section fleet">
       <div class="container">
         <div class="section-head section-head--center" data-reveal>
-          <p class="eyebrow eyebrow--center eyebrow--light"><span class="eyebrow-line"></span>THE FLEET<span class="eyebrow-line"></span></p>
-          <h2>Handpicked Signature Vessels</h2>
-          <p class="muted-light">A curated selection from our private fleet — each yacht a masterpiece of design, comfort and seamanship.</p>
+          <p class="eyebrow eyebrow--center eyebrow--light"><span class="eyebrow-line"></span><span data-i18n="fleet_eyebrow">THE FLEET</span><span class="eyebrow-line"></span></p>
+          <h2 data-i18n="fleet_title">Handpicked Signature Vessels</h2>
+          <p class="muted-light" data-i18n="fleet_sub">A curated selection from our private fleet — each yacht a masterpiece of design, comfort and seamanship.</p>
         </div>
 
         <div class="fleet__tabs" data-reveal>
-          <button class="tab is-active" data-filter="all">All</button>
-          <button class="tab" data-filter="motor">Motor Yachts</button>
-          <button class="tab" data-filter="sail">Sailing Yachts</button>
-          <button class="tab" data-filter="cat">Catamarans</button>
+          <button class="tab is-active" data-filter="all" data-i18n="tab_all">All</button>
+          <button class="tab" data-filter="motor" data-i18n="tab_motor">Motor Yachts</button>
+          <button class="tab" data-filter="sail" data-i18n="tab_sail">Sailing Yachts</button>
+          <button class="tab" data-filter="cat" data-i18n="tab_cat">Catamarans</button>
         </div>
 
         <div class="fleet__grid">
           <!-- Card 1 -->
-          <article class="yacht-card" data-cat="motor" data-reveal
-            data-name="The Meridian" data-tag="Motor Yacht"
-            data-specs="164 FT / 50M • 12 GUESTS • 6 CABINS • CREW OF 11"
-            data-rate="From $145,000 / week" data-img="images/yacht_motor.jpg">
+          <article class="yacht-card" data-cat="motor" data-reveal data-img="images/yacht_motor.jpg">
             <div class="yacht-card__media">
               <img src="images/yacht_motor.jpg" alt="The Meridian — 164ft motor superyacht cruising the open ocean" />
-              <span class="yacht-card__tag">MOTOR YACHT</span>
+              <span class="yacht-card__tag" data-i18n="tag_motor">MOTOR YACHT</span>
             </div>
             <div class="yacht-card__body">
               <h3>The Meridian</h3>
-              <p class="yacht-card__specs">164 FT / 50M &bull; 12 GUESTS &bull; 6 CABINS &bull; CREW OF 11</p>
+              <p class="yacht-card__specs" data-i18n="specs_meridian">164 FT / 50M &bull; 12 GUESTS &bull; 6 CABINS &bull; CREW OF 11</p>
               <div class="yacht-card__foot">
-                <span class="yacht-card__rate">From $145,000 <em>/ week</em></span>
+                <span class="yacht-card__rate" data-i18n-html="rate_meridian">From $145,000 <em>/ week</em></span>
                 <button class="round-arrow" aria-label="View The Meridian">
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </button>
@@ -195,19 +196,16 @@
           </article>
 
           <!-- Card 2 -->
-          <article class="yacht-card" data-cat="sail" data-reveal
-            data-name="Ocean Breeze" data-tag="Sailing Yacht"
-            data-specs="120 FT / 36M • 8 GUESTS • 4 CABINS • CREW OF 6"
-            data-rate="From $85,000 / week" data-img="images/yacht_sailing.jpg">
+          <article class="yacht-card" data-cat="sail" data-reveal data-img="images/yacht_sailing.jpg">
             <div class="yacht-card__media">
               <img src="images/yacht_sailing.jpg" alt="Ocean Breeze — 120ft high-performance sailing yacht under white sails" />
-              <span class="yacht-card__tag">SAILING YACHT</span>
+              <span class="yacht-card__tag" data-i18n="tag_sail">SAILING YACHT</span>
             </div>
             <div class="yacht-card__body">
               <h3>Ocean Breeze</h3>
-              <p class="yacht-card__specs">120 FT / 36M &bull; 8 GUESTS &bull; 4 CABINS &bull; CREW OF 6</p>
+              <p class="yacht-card__specs" data-i18n="specs_breeze">120 FT / 36M &bull; 8 GUESTS &bull; 4 CABINS &bull; CREW OF 6</p>
               <div class="yacht-card__foot">
-                <span class="yacht-card__rate">From $85,000 <em>/ week</em></span>
+                <span class="yacht-card__rate" data-i18n-html="rate_breeze">From $85,000 <em>/ week</em></span>
                 <button class="round-arrow" aria-label="View Ocean Breeze">
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </button>
@@ -216,19 +214,16 @@
           </article>
 
           <!-- Card 3 -->
-          <article class="yacht-card" data-cat="cat" data-reveal
-            data-name="Aqua Vida" data-tag="Luxury Catamaran"
-            data-specs="82 FT / 25M • 10 GUESTS • 5 CABINS • CREW OF 4"
-            data-rate="From $65,000 / week" data-img="images/yacht_catamaran.jpg">
+          <article class="yacht-card" data-cat="cat" data-reveal data-img="images/yacht_catamaran.jpg">
             <div class="yacht-card__media">
               <img src="images/yacht_catamaran.jpg" alt="Aqua Vida — 82ft luxury catamaran in a turquoise lagoon" />
-              <span class="yacht-card__tag">LUXURY CATAMARAN</span>
+              <span class="yacht-card__tag" data-i18n="tag_cat">LUXURY CATAMARAN</span>
             </div>
             <div class="yacht-card__body">
               <h3>Aqua Vida</h3>
-              <p class="yacht-card__specs">82 FT / 25M &bull; 10 GUESTS &bull; 5 CABINS &bull; CREW OF 4</p>
+              <p class="yacht-card__specs" data-i18n="specs_aqua">82 FT / 25M &bull; 10 GUESTS &bull; 5 CABINS &bull; CREW OF 4</p>
               <div class="yacht-card__foot">
-                <span class="yacht-card__rate">From $65,000 <em>/ week</em></span>
+                <span class="yacht-card__rate" data-i18n-html="rate_aqua">From $65,000 <em>/ week</em></span>
                 <button class="round-arrow" aria-label="View Aqua Vida">
                   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
                 </button>
@@ -249,26 +244,26 @@
       </div>
       <div class="split__content">
         <div class="split__inner" data-reveal>
-          <p class="eyebrow"><span class="eyebrow-line"></span>TAILORED VOYAGES</p>
-          <h2>Crafted Moments on Open Water</h2>
-          <p class="muted">The art of bespoke yachting lies in the details — every voyage composed around your rhythm, your palate and your sense of wonder.</p>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="exp_eyebrow">TAILORED VOYAGES</span></p>
+          <h2 data-i18n="exp_title">Crafted Moments on Open Water</h2>
+          <p class="muted" data-i18n="exp_sub">The art of bespoke yachting lies in the details — every voyage composed around your rhythm, your palate and your sense of wonder.</p>
 
           <ul class="feature-list">
             <li>
               <img src="images/icon_destination.svg" alt="" class="feature-icon" />
-              <div><h4>Bespoke Itineraries</h4><p>Custom routing to secluded bays, untouched anchorages and private harbors.</p></div>
+              <div><h4 data-i18n="feat1_title">Bespoke Itineraries</h4><p data-i18n="feat1_desc">Custom routing to secluded bays, untouched anchorages and private harbors.</p></div>
             </li>
             <li>
               <img src="images/icon_luxury.svg" alt="" class="feature-icon" />
-              <div><h4>Michelin-Trained Private Chefs</h4><p>World-class culinary experiences tailored to your dietary palate.</p></div>
+              <div><h4 data-i18n="feat2_title">Michelin-Trained Private Chefs</h4><p data-i18n="feat2_desc">World-class culinary experiences tailored to your dietary palate.</p></div>
             </li>
             <li>
               <img src="images/icon_charter.svg" alt="" class="feature-icon" />
-              <div><h4>Curated Water Toys &amp; Tenders</h4><p>Seabobs, hydrofoils, jetskis, deep-sea diving gear and high-speed chase tenders.</p></div>
+              <div><h4 data-i18n="feat3_title">Curated Water Toys &amp; Tenders</h4><p data-i18n="feat3_desc">Seabobs, hydrofoils, jetskis, deep-sea diving gear and high-speed chase tenders.</p></div>
             </li>
             <li>
               <img src="images/icon_crew.svg" alt="" class="feature-icon" />
-              <div><h4>Certified Master Captains</h4><p>Highly credentialed navigators ensuring supreme safety and access.</p></div>
+              <div><h4 data-i18n="feat4_title">Certified Master Captains</h4><p data-i18n="feat4_desc">Highly credentialed navigators ensuring supreme safety and access.</p></div>
             </li>
           </ul>
         </div>
@@ -279,10 +274,10 @@
     <section id="destinations" class="section destinations">
       <div class="container destinations__grid">
         <div class="destinations__intro" data-reveal>
-          <p class="eyebrow"><span class="eyebrow-line"></span>TOP DESTINATIONS</p>
-          <h2>Iconic Places, Extraordinary Journeys</h2>
-          <p class="muted">From Newport's historic coastline to hidden gems around the world, discover breathtaking destinations by sea.</p>
-          <button class="btn btn-gold">Explore Destinations <span class="arr">&rarr;</span></button>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="dest_eyebrow">TOP DESTINATIONS</span></p>
+          <h2 data-i18n="dest_title">Iconic Places, Extraordinary Journeys</h2>
+          <p class="muted" data-i18n="dest_sub">From Newport's historic coastline to hidden gems around the world, discover breathtaking destinations by sea.</p>
+          <button class="btn btn-gold"><span data-i18n="dest_btn">Explore Destinations</span> <span class="arr">&rarr;</span></button>
           <div class="dest-nav">
             <button class="dest-prev-btn" aria-label="Previous Destination">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
@@ -300,8 +295,8 @@
                 <article class="destination-card">
                   <img src="images/dest_newport.jpg" alt="Historic Newport, Rhode Island coastline" />
                   <div class="destination-card__overlay">
-                    <span class="destination-card__sub">Rhode Island, USA</span>
-                    <h3>Newport</h3>
+                    <span class="destination-card__sub" data-i18n="dest1_sub">Rhode Island, USA</span>
+                    <h3 data-i18n="dest1_title">Newport</h3>
                   </div>
                 </article>
               </div>
@@ -309,8 +304,8 @@
                 <article class="destination-card">
                   <img src="images/dest_bahamas.jpg" alt="Turquoise waters of the Bahamas" />
                   <div class="destination-card__overlay">
-                    <span class="destination-card__sub">Caribbean</span>
-                    <h3>The Bahamas</h3>
+                    <span class="destination-card__sub" data-i18n="dest2_sub">Caribbean</span>
+                    <h3 data-i18n="dest2_title">The Bahamas</h3>
                   </div>
                 </article>
               </div>
@@ -318,8 +313,8 @@
                 <article class="destination-card">
                   <img src="images/dest_mediterranean.jpg" alt="Pastel cliffside village on the Mediterranean coast" />
                   <div class="destination-card__overlay">
-                    <span class="destination-card__sub">Europe</span>
-                    <h3>Mediterranean</h3>
+                    <span class="destination-card__sub" data-i18n="dest3_sub">Europe</span>
+                    <h3 data-i18n="dest3_title">Mediterranean</h3>
                   </div>
                 </article>
               </div>
@@ -334,9 +329,9 @@
       <div class="cta-banner__overlay"></div>
       <div class="container cta-banner__inner">
         <div class="cta-banner__content" data-reveal>
-          <p class="eyebrow eyebrow--light">YOUR PERSONAL SANCTUARY</p>
-          <h2>The Ocean Awaits.<br />Plan Your Bespoke Escape.</h2>
-          <button class="btn btn-gold" data-open-booking>Inquire With A Charter Broker <span class="arr">&rarr;</span></button>
+          <p class="eyebrow eyebrow--light" data-i18n="cta_eyebrow">YOUR PERSONAL SANCTUARY</p>
+          <h2 data-i18n-html="cta_title">The Ocean Awaits.<br />Plan Your Bespoke Escape.</h2>
+          <button class="btn btn-gold" data-open-booking><span data-i18n="cta_btn">Inquire With A Charter Broker</span> <span class="arr">&rarr;</span></button>
         </div>
       </div>
     </section>
@@ -349,24 +344,24 @@
           <div class="swiper" id="testimonials-slider">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <blockquote>Sailing the Mediterranean with Aventis surpassed every expectation. The crew's discretion, the culinary artistry, and the vessel's immaculate finish made it an unforgettable journey.</blockquote>
+                <blockquote data-i18n="testi1">Sailing the Mediterranean with Aventis surpassed every expectation. The crew's discretion, the culinary artistry, and the vessel's immaculate finish made it an unforgettable journey.</blockquote>
                 <div class="author">
                   <img src="images/avatar_emily.jpg" alt="Lady Emily Vance" />
-                  <div><strong>Lady Emily Vance</strong><span>Monaco Charter Client</span></div>
+                  <div><strong>Lady Emily Vance</strong><span data-i18n="testi1_role">Monaco Charter Client</span></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <blockquote>From the first call to the final sunset, every detail was anticipated. Aventis turned a family holiday into the most cherished week of our year.</blockquote>
+                <blockquote data-i18n="testi2">From the first call to the final sunset, every detail was anticipated. Aventis turned a family holiday into the most cherished week of our year.</blockquote>
                 <div class="author">
                   <img src="images/avatar_emily.jpg" alt="Charter client" />
-                  <div><strong>James Ellingham</strong><span>Newport Charter Client</span></div>
+                  <div><strong>James Ellingham</strong><span data-i18n="testi2_role">Newport Charter Client</span></div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <blockquote>Impeccable taste and flawless execution. The private chef alone was worth the voyage — and the anchorages they found were pure magic.</blockquote>
+                <blockquote data-i18n="testi3">Impeccable taste and flawless execution. The private chef alone was worth the voyage — and the anchorages they found were pure magic.</blockquote>
                 <div class="author">
                   <img src="images/avatar_emily.jpg" alt="Charter client" />
-                  <div><strong>Sofia Marchetti</strong><span>Amalfi Charter Client</span></div>
+                  <div><strong>Sofia Marchetti</strong><span data-i18n="testi3_role">Amalfi Charter Client</span></div>
                 </div>
               </div>
             </div>
@@ -398,36 +393,36 @@
           <img src="images/logo.svg" alt="" class="brand__mark" width="40" height="40" />
           <span class="brand__wordmark"><b>AVENTIS</b><em>YACHT CHARTERS</em></span>
         </a>
-        <p>Crafting extraordinary maritime journeys with bespoke itineraries and world-class hospitality since 1988.</p>
+        <p data-i18n="footer_bio">Crafting extraordinary maritime journeys with bespoke itineraries and world-class hospitality since 1988.</p>
       </div>
 
       <div class="footer__col">
-        <h5>Fleet</h5>
+        <h5 data-i18n="footer_fleet">Fleet</h5>
         <ul>
-          <li><a href="#fleet">Motor Yachts</a></li>
-          <li><a href="#fleet">Sailing Yachts</a></li>
-          <li><a href="#fleet">Luxury Catamarans</a></li>
-          <li><a href="#fleet">Mega Yachts</a></li>
-          <li><a href="#fleet">New Additions</a></li>
+          <li><a href="#fleet" data-i18n="tab_motor">Motor Yachts</a></li>
+          <li><a href="#fleet" data-i18n="tab_sail">Sailing Yachts</a></li>
+          <li><a href="#fleet" data-i18n="footer_cat">Luxury Catamarans</a></li>
+          <li><a href="#fleet" data-i18n="footer_mega">Mega Yachts</a></li>
+          <li><a href="#fleet" data-i18n="footer_new">New Additions</a></li>
         </ul>
       </div>
 
       <div class="footer__col">
-        <h5>Destinations</h5>
+        <h5 data-i18n="nav_destinations">Destinations</h5>
         <ul>
-          <li><a href="#destinations">Newport &amp; New England</a></li>
-          <li><a href="#destinations">The Bahamas</a></li>
-          <li><a href="#destinations">French Riviera</a></li>
-          <li><a href="#destinations">Amalfi Coast</a></li>
-          <li><a href="#destinations">Greek Cyclades</a></li>
+          <li><a href="#destinations" data-i18n="footer_dest1">Newport &amp; New England</a></li>
+          <li><a href="#destinations" data-i18n="dest2_title">The Bahamas</a></li>
+          <li><a href="#destinations" data-i18n="footer_dest3">French Riviera</a></li>
+          <li><a href="#destinations" data-i18n="footer_dest4">Amalfi Coast</a></li>
+          <li><a href="#destinations" data-i18n="footer_dest5">Greek Cyclades</a></li>
         </ul>
       </div>
 
       <div class="footer__col footer__concierge">
-        <h5>Charter Concierge</h5>
-        <p class="footer__news-label">Receive curated seasonal itineraries.</p>
+        <h5 data-i18n="footer_concierge">Charter Concierge</h5>
+        <p class="footer__news-label" data-i18n="footer_news">Receive curated seasonal itineraries.</p>
         <form class="newsletter" onsubmit="return false;">
-          <input type="email" placeholder="Your email address" aria-label="Email address" required />
+          <input type="email" placeholder="Your email address" data-i18n-ph="footer_email" aria-label="Email address" required />
           <button type="submit" aria-label="Subscribe">
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </button>
@@ -441,11 +436,11 @@
     </div>
 
     <div class="container footer__bottom">
-      <p>&copy; 2026 Aventis Yacht Charters. All rights reserved.</p>
+      <p data-i18n="footer_copy">&copy; 2026 Aventis Yacht Charters. All rights reserved.</p>
       <div class="footer__legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Charter</a>
-        <a href="#">Maritime Safety</a>
+        <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+        <a href="#" data-i18n="footer_terms">Terms of Charter</a>
+        <a href="#" data-i18n="footer_safety">Maritime Safety</a>
       </div>
     </div>
   </footer>
@@ -455,12 +450,12 @@
     <button class="modal__close" data-close-modal aria-label="Close search">&times;</button>
     <div class="modal--search__inner">
       <label class="visually-hidden" for="search-input">Search</label>
-      <input type="text" id="search-input" placeholder="Search yachts, destinations, experiences…" />
+      <input type="text" id="search-input" placeholder="Search yachts, destinations, experiences…" data-i18n-ph="search_ph" />
       <div class="search-chips">
-        <button>Bahamas</button>
-        <button>50m+ Motor Yachts</button>
-        <button>Summer in Greece</button>
-        <button>Catamarans</button>
+        <button data-i18n="chip1">Bahamas</button>
+        <button data-i18n="chip2">50m+ Motor Yachts</button>
+        <button data-i18n="chip3">Summer in Greece</button>
+        <button data-i18n="chip4">Catamarans</button>
       </div>
     </div>
   </div>
@@ -469,17 +464,17 @@
   <div class="modal modal--dialog" id="booking-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Charter enquiry">
     <div class="dialog">
       <button class="modal__close" data-close-modal aria-label="Close">&times;</button>
-      <p class="eyebrow"><span class="eyebrow-line"></span>CHARTER ENQUIRY</p>
-      <h3>Begin Your Bespoke Voyage</h3>
+      <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="book_eyebrow">CHARTER ENQUIRY</span></p>
+      <h3 data-i18n="book_title">Begin Your Bespoke Voyage</h3>
       <form class="booking-form" onsubmit="return false;">
-        <div class="field"><label>Destination</label><input type="text" placeholder="e.g. The Mediterranean" /></div>
-        <div class="field"><label>Yacht Preference</label>
-          <select><option>Motor Yacht</option><option>Sailing Yacht</option><option>Luxury Catamaran</option><option>Mega Yacht</option></select>
+        <div class="field"><label data-i18n="book_dest">Destination</label><input type="text" placeholder="e.g. The Mediterranean" data-i18n-ph="book_dest_ph" /></div>
+        <div class="field"><label data-i18n="book_pref">Yacht Preference</label>
+          <select><option data-i18n="opt_motor">Motor Yacht</option><option data-i18n="opt_sail">Sailing Yacht</option><option data-i18n="opt_cat">Luxury Catamaran</option><option data-i18n="opt_mega">Mega Yacht</option></select>
         </div>
-        <div class="field"><label>Charter Dates</label><input type="text" placeholder="Select your dates" onfocus="this.type='date'" /></div>
-        <div class="field"><label>Number of Guests</label><input type="number" min="1" max="24" placeholder="8" /></div>
-        <div class="field field--full"><label>Special Requests</label><textarea rows="3" placeholder="Tell us about your ideal voyage…"></textarea></div>
-        <button class="btn btn-gold field--full" type="submit">Send Enquiry <span class="arr">&rarr;</span></button>
+        <div class="field"><label data-i18n="book_dates">Charter Dates</label><input type="text" placeholder="Select your dates" data-i18n-ph="book_dates_ph" onfocus="this.type='date'" /></div>
+        <div class="field"><label data-i18n="book_guests">Number of Guests</label><input type="number" min="1" max="24" placeholder="8" /></div>
+        <div class="field field--full"><label data-i18n="book_requests">Special Requests</label><textarea rows="3" placeholder="Tell us about your ideal voyage…" data-i18n-ph="book_requests_ph"></textarea></div>
+        <button class="btn btn-gold field--full" type="submit"><span data-i18n="book_send">Send Enquiry</span> <span class="arr">&rarr;</span></button>
       </form>
     </div>
   </div>
@@ -492,15 +487,16 @@
       <div class="yacht-modal__body">
         <h3 id="ym-name"></h3>
         <p id="ym-specs" class="yacht-card__specs"></p>
-        <p class="muted">A flagship of the Aventis private fleet — appointed with sumptuous staterooms, expansive sun decks and a full suite of water toys, supported by a discreet professional crew.</p>
+        <p class="muted" data-i18n="ym_desc">A flagship of the Aventis private fleet — appointed with sumptuous staterooms, expansive sun decks and a full suite of water toys, supported by a discreet professional crew.</p>
         <p id="ym-rate" class="yacht-card__rate"></p>
-        <button class="btn btn-gold" data-open-booking>Enquire About This Yacht <span class="arr">&rarr;</span></button>
+        <button class="btn btn-gold" data-open-booking><span data-i18n="ym_btn">Enquire About This Yacht</span> <span class="arr">&rarr;</span></button>
       </div>
     </div>
   </div>
 
   <!-- ============ SCRIPTS ============ -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/i18n.js" defer></script>
   <script src="js/canvas-hero.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>

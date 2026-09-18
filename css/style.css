@@ -165,6 +165,23 @@ h3 { font-size: clamp(22px, 2vw, 26px); }
 
 .header-actions { display: flex; align-items: center; gap: 16px; }
 
+/* Language switch — segmented pill */
+.lang-switch {
+  display: inline-flex; align-items: center; gap: 2px;
+  padding: 3px; border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
+.lang-opt {
+  font-family: var(--font-sans); font-size: 12px; font-weight: 600; letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.7); line-height: 1;
+  padding: 6px 13px; border-radius: var(--radius-full);
+  transition: var(--transition-smooth);
+}
+.lang-opt:hover { color: #fff; }
+.lang-opt.is-active { background: var(--color-gold); color: #fff; box-shadow: 0 2px 10px rgba(197, 155, 95, 0.35); }
+
 .hamburger { display: none; flex-direction: column; gap: 5px; width: 30px; padding: 6px; }
 .hamburger span { display: block; height: 2px; width: 100%; background: #fff; border-radius: 2px; transition: transform 0.35s ease, opacity 0.3s ease; }
 .hamburger.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
