@@ -50,7 +50,7 @@
       dest_sub: 'From the historic coastline of Sunny Beach to endlessly beautiful hidden places around the world, discover breathtaking destinations by sea.',
       dest_btn: 'Explore Destinations',
       dest1_sub: 'Black Sea Coast, Bulgaria', dest1_title: 'Sunny Beach',
-      dest2_sub: 'Caribbean', dest2_title: 'The Bahamas',
+      dest2_sub: 'Historic Old Town', dest2_title: 'Sozopol',
       dest3_sub: 'Europe', dest3_title: 'Mediterranean',
 
       /* cta */
@@ -77,7 +77,7 @@
 
       /* search modal */
       search_ph: 'Search yachts, destinations, experiences…',
-      chip1: 'Bahamas', chip2: '50m+ Motor Yachts', chip3: 'Summer in Greece', chip4: 'Catamarans',
+      chip1: 'Sozopol', chip2: '50m+ Motor Yachts', chip3: 'Summer in Greece', chip4: 'Catamarans',
 
       /* booking modal */
       book_eyebrow: 'CHARTER ENQUIRY', book_title: 'Begin Your Bespoke Voyage',
@@ -142,7 +142,7 @@
       dest_sub: 'От историческото крайбрежие на Слънчев бряг до скрити безкрайно красиви места по света — открийте зашеметяващи дестинации по вода.',
       dest_btn: 'Разгледай дестинациите',
       dest1_sub: 'Черноморие, България', dest1_title: 'Слънчев бряг',
-      dest2_sub: 'Карибите', dest2_title: 'Бахамите',
+      dest2_sub: 'Старият град', dest2_title: 'Созопол',
       dest3_sub: 'Европа', dest3_title: 'Средиземноморие',
 
       /* cta */
@@ -169,7 +169,7 @@
 
       /* search modal */
       search_ph: 'Търсете яхти, дестинации, изживявания…',
-      chip1: 'Бахамите', chip2: 'Моторни яхти 50м+', chip3: 'Лято в Гърция', chip4: 'Катамарани',
+      chip1: 'Созопол', chip2: 'Моторни яхти 50м+', chip3: 'Лято в Гърция', chip4: 'Катамарани',
 
       /* booking modal */
       book_eyebrow: 'ЧАРТЪРНО ЗАПИТВАНЕ', book_title: 'Започнете вашето пътешествие по поръчка',
