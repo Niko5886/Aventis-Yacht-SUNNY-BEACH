@@ -10,6 +10,12 @@ A hand-crafted, bilingual, single-page marketing site for a luxury yacht-charter
 
 <br />
 
+<a href="https://aventis-yacht-sunny-beach.netlify.app">
+  <img src="https://img.shields.io/badge/%F0%9F%8C%90%20LIVE%20PROJECT-aventis--yacht--sunny--beach.netlify.app%20%E2%86%92-C6A15B?style=for-the-badge&labelColor=070F17" height="38" alt="Live Project — aventis-yacht-sunny-beach.netlify.app" />
+</a>
+
+<br /><br />
+
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/Vanilla_JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
@@ -130,12 +136,17 @@ Convention: **navy text on gold surfaces** for WCAG-AA contrast.
 
 ## 🚢 Deployment
 
-The site is a static bundle deployed on **Netlify** with continuous deployment:
+The site is a static bundle hosted on **Netlify**, live at **[aventis-yacht-sunny-beach.netlify.app](https://aventis-yacht-sunny-beach.netlify.app)**.
 
-1. Commit your change on a topic branch or `main`.
-2. Push to `origin/main` — Netlify builds & publishes automatically (no build command; publish directory is the repo root).
+Deploys are published from a clean dist folder via the Netlify CLI:
 
-> There is no build step, so deploys are near-instant. Batch several commits into one push to keep Netlify build usage minimal.
+```bash
+# upload only the static files (never the whole repo root — that would
+# include .git and the 20 MB git-ignored hero_video.mp4)
+netlify deploy --prod --dir=<clean-dist>
+```
+
+> There is no build step, so deploys are near-instant. To enable automatic deploys on every `git push`, connect the repo in the Netlify dashboard (build command: none · publish directory: repo root), then simply batch commits into one push to keep build usage minimal.
 
 ## 🖼️ Image Credits
 
