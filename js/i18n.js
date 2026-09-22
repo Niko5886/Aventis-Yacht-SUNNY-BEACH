@@ -51,7 +51,7 @@
       dest_btn: 'Explore Destinations',
       dest1_sub: 'Black Sea Coast, Bulgaria', dest1_title: 'Sunny Beach',
       dest2_sub: 'Historic Old Town', dest2_title: 'Sozopol',
-      dest3_sub: 'Europe', dest3_title: 'Mediterranean',
+      dest3_sub: 'Golden Beaches', dest3_title: 'Primorsko',
 
       /* cta */
       cta_eyebrow: 'YOUR PERSONAL SANCTUARY',
@@ -143,7 +143,7 @@
       dest_btn: 'Разгледай дестинациите',
       dest1_sub: 'Черноморие, България', dest1_title: 'Слънчев бряг',
       dest2_sub: 'Старият град', dest2_title: 'Созопол',
-      dest3_sub: 'Европа', dest3_title: 'Средиземноморие',
+      dest3_sub: 'Златни плажове', dest3_title: 'Приморско',
 
       /* cta */
       cta_eyebrow: 'ВАШЕТО ЛИЧНО УБЕЖИЩЕ',
