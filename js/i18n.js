@@ -55,7 +55,7 @@
 
       /* cta */
       cta_eyebrow: 'YOUR PERSONAL SANCTUARY',
-      cta_title: 'The Ocean Awaits.<br />Plan Your Bespoke Escape.',
+      cta_title: 'The Sea Awaits.<br />Plan Your Bespoke Escape.',
       cta_btn: 'Inquire With A Charter Broker',
 
       /* testimonials */
@@ -147,7 +147,7 @@
 
       /* cta */
       cta_eyebrow: 'ВАШЕТО ЛИЧНО УБЕЖИЩЕ',
-      cta_title: 'Океанът очаква.<br />Планирайте вашето бягство по поръчка.',
+      cta_title: 'Морето ви очаква.<br />Планирайте вашето бягство по поръчка.',
       cta_btn: 'Свържете се с чартър брокер',
 
       /* testimonials */
