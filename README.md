@@ -78,8 +78,8 @@ No install, no build — but the hero fetches frames over HTTP, so **serve the f
 
 ```bash
 # clone
-git clone https://github.com/Niko5886/Sunny-Beach.git
-cd Sunny-Beach
+git clone https://github.com/Niko5886/Aventis-Yacht-SUNNY-BEACH.git
+cd Aventis-Yacht-SUNNY-BEACH
 
 # serve on http://127.0.0.1:5500  (pick any one)
 python -m http.server 5500          # Python 3
