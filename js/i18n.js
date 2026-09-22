@@ -47,7 +47,7 @@
       /* destinations */
       dest_eyebrow: 'TOP DESTINATIONS',
       dest_title: 'Iconic Places, Extraordinary Journeys',
-      dest_sub: 'From the historic coastline of Sunny Beach to endlessly beautiful hidden places around the world, discover breathtaking destinations by sea.',
+      dest_sub: 'From the historic coastline of Sunny Beach to endlessly beautiful hidden Bulgarian beaches, discover breathtaking destinations by sea.',
       dest_btn: 'Explore Destinations',
       dest1_sub: 'Black Sea Coast, Bulgaria', dest1_title: 'Sunny Beach',
       dest2_sub: 'Historic Old Town', dest2_title: 'Sozopol',
@@ -139,7 +139,7 @@
       /* destinations */
       dest_eyebrow: 'ТОП ДЕСТИНАЦИИ',
       dest_title: 'Емблематични места, изключителни пътешествия',
-      dest_sub: 'От историческото крайбрежие на Слънчев бряг до скрити безкрайно красиви места по света — открийте зашеметяващи дестинации по вода.',
+      dest_sub: 'От историческото крайбрежие на Слънчев бряг до скрити безкрайно красиви български плажове — открийте зашеметяващи дестинации по вода.',
       dest_btn: 'Разгледай дестинациите',
       dest1_sub: 'Черноморие, България', dest1_title: 'Слънчев бряг',
       dest2_sub: 'Старият град', dest2_title: 'Созопол',

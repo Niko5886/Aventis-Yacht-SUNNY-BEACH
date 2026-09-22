@@ -9,7 +9,7 @@
   #main-header, #main-header.scrolled { padding-left: 32px; padding-right: 32px; }
   .hero-content-stage { right: 56px; bottom: 96px; max-width: 540px; }
   .hero-hud--right { right: 56px; }
-  .destinations__grid { grid-template-columns: 340px 1fr; gap: 40px; }
+  .destinations__grid { grid-template-columns: 280px 1fr; gap: 36px; }
   .split__content { padding: 90px 56px; }
 }
 
