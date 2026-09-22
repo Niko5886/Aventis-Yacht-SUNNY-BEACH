@@ -72,7 +72,7 @@
       footer_dest1: 'Sunny Beach & Black Sea Coast', footer_dest3: 'French Riviera', footer_dest4: 'Amalfi Coast', footer_dest5: 'Greek Cyclades',
       footer_concierge: 'Charter Concierge', footer_news: 'Receive curated seasonal itineraries.', footer_email: 'Your email address',
       footer_thanks: 'Thank you — curated itineraries are on their way.',
-      footer_copy: '© 2026 Aventis Yacht Charters. All rights reserved.',
+      footer_copy: '© 2026 Aventis Yacht SUNNY BEACH | All rights reserved.',
       footer_privacy: 'Privacy Policy', footer_terms: 'Terms of Charter', footer_safety: 'Maritime Safety',
 
       /* search modal */
@@ -164,7 +164,7 @@
       footer_dest1: 'Слънчев бряг и Черноморие', footer_dest3: 'Френската ривиера', footer_dest4: 'Амалфийското крайбрежие', footer_dest5: 'Гръцките Циклади',
       footer_concierge: 'Чартър консиерж', footer_news: 'Получавайте подбрани сезонни маршрути.', footer_email: 'Вашият имейл адрес',
       footer_thanks: 'Благодарим — подбрани маршрути са на път към вас.',
-      footer_copy: '© 2026 Aventis Yacht Charters. Всички права запазени.',
+      footer_copy: '© 2026 Aventis Yacht SUNNY BEACH | Всички права запазени.',
       footer_privacy: 'Поверителност', footer_terms: 'Условия за чартър', footer_safety: 'Морска безопасност',
 
       /* search modal */

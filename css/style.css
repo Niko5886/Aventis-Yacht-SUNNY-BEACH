@@ -454,6 +454,8 @@ h3 { font-size: clamp(22px, 2vw, 26px); }
 
 .footer__bottom { display: flex; align-items: center; justify-content: space-between; margin-top: 70px; padding-top: 30px; border-top: 1px solid var(--border-light); }
 .footer__bottom p { color: rgba(255,255,255,0.62); font-size: 13px; }
+.footer__credit { color: rgba(255,255,255,0.45); font-size: 12.5px; letter-spacing: 0.2px; }
+.footer__credit:hover { color: var(--color-gold); }
 .footer__legal { display: flex; gap: 26px; }
 .footer__legal a { color: rgba(255,255,255,0.62); font-size: 13px; transition: color 0.3s ease; }
 .footer__legal a:hover { color: var(--color-gold); }
