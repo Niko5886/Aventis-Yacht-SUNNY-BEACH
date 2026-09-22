@@ -95,7 +95,7 @@
 
       hero: [
         { eyebrow: 'BESPOKE PRIVATE CHARTERS', title: 'Extraordinary Journeys', desc: 'Curated maritime voyages handcrafted for those who demand the finest in luxury yachting.', btn1: 'Explore The Fleet', btn2: 'Watch Story' },
-        { eyebrow: 'OCEANIC EXCELLENCE', title: 'Unrivaled Freedom', desc: 'Chart your own horizon across pristine archipelagos with Michelin-trained private crews.', btn1: 'View Destinations', btn2: 'Inquire Now' },
+        { eyebrow: 'MARINE EXCELLENCE', title: 'Unrivaled Freedom', desc: 'Chart your own horizon across pristine archipelagos with Michelin-trained private crews.', btn1: 'View Destinations', btn2: 'Inquire Now' },
         { eyebrow: 'THE PINNACLE OF LUXURY', title: 'Endless Horizons', desc: 'Immerse yourself in timeless coastal elegance where world-class service meets absolute serenity.', btn1: 'Begin Journey', btn2: 'Charter Guide' }
       ]
     },
@@ -187,7 +187,7 @@
 
       hero: [
         { eyebrow: 'ПОРЪЧКОВИ ЧАСТНИ ЧАРТЪРИ', title: 'Изключителни Пътешествия', desc: 'Подбрани морски пътешествия, създадени за тези, които търсят най-финото в луксозния яхтинг.', btn1: 'Разгледай флота', btn2: 'Гледай историята' },
-        { eyebrow: 'ОКЕАНСКО СЪВЪРШЕНСТВО', title: 'Ненадмината Свобода', desc: 'Начертайте собствения си хоризонт сред девствени архипелази с екипажи с мишленова подготовка.', btn1: 'Виж дестинациите', btn2: 'Запитване сега' },
+        { eyebrow: 'МОРСКО СЪВЪРШЕНСТВО', title: 'Ненадмината Свобода', desc: 'Начертайте собствения си хоризонт сред девствени архипелази с екипажи с мишленова подготовка.', btn1: 'Виж дестинациите', btn2: 'Запитване сега' },
         { eyebrow: 'ВЪРХЪТ НА ЛУКСА', title: 'Безкрайни Хоризонти', desc: 'Потопете се в безвременна крайбрежна елегантност, където първокласното обслужване среща абсолютното спокойствие.', btn1: 'Започни пътуване', btn2: 'Чартър гид' }
       ]
     }
